@@ -1,2 +1,4 @@
 # SafeChat
-Toggle between normal and decoy views with the "~" key and the "esc" key. 
+
+
+## The messaging app that keeps you safe from prying eyes.

@@ -1,0 +1,29 @@
+{
+  "name": "safe-chat",
+  "version": "1.0.0",
+  "description": "Messaging app that keeps you safe from prying eyes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "Mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alankemsley/safe-chat.git"
+  },
+  "author": "Alan Kemsley, Adam Wallis, Georgi Nenov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alankemsley/safe-chat/issues"
+  },
+  "homepage": "https://github.com/alankemsley/safe-chat#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "express-handlebars": "^3.0.0",
+    "http": "0.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.14.1",
+    "socket.io": "^2.0.3"
+  }
+}

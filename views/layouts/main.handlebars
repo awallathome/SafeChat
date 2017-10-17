@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>safeCHAT</title>
+  {{!-- Materialize CDN --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  {{!-- Materialize Icons CDN --}}
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  {{!-- Google Fonts CDN --}}
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  {{!-- Link to main CSS file --}}
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+<body class="blue lighten-5">
+  {{!-- Main site content from main.handlebars goes here --}}
+  {{{ body }}}
+
+  {{!-- jQuery CDN --}}
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  {{!-- Materialize JavaScript CDN --}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  {{!-- Link to socket.io.js --}}
+  <script src="/socket.io/socket.io.js"></script>
+  {{!-- Link to main JavaScript file --}}
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

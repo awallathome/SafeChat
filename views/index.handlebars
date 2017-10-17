@@ -1,0 +1,66 @@
+{{!-- HEADER --}}
+<div class="navbar-fixed">
+<nav>
+  <div class="nav-wrapper blue">
+    <div class="row">
+      <a href="#messageArea" class="brand-logo center" id="logo"><i class="material-icons">forum</i>safeCHAT</a>
+    </div>
+  </div>
+</nav>
+</div>
+
+{{!-- MESSAGES SECTION --}}
+<main class="blue lighten-5">
+  <div class="row scrollspy hide" id="messageArea">
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 grey-text text-darken-2 white bubble" id="messages">         
+            {{#each messages}}
+              <p><h6>{{this.username}}</h6>{{this.message}}</p>
+            {{/each}}
+          </div>
+        </div>
+        <div class="scrollspy" id="marker"></div>
+      </div>
+    </div>
+  </div>
+
+<div id="messageArea2" class="row scrollspy">
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 grey-text text-darken-2 white bubble" id="messages">
+          <p><h6>Boss</h6>Our quarterly results are in. We were able to beat the comp set by over 20%. Great job, team!</p>
+          <p><h6>Janet from Sales</h6>Excellent!</p>
+          <p><h6>Robert from Marketing</h6>Great to hear! Not only did we beat the competitors, but it looks like we also exceeded our budget.</p>
+          <p><h6>Carol from Operations</h6>Our safisfaction survey results just came in last night as well. Our overall satisfaction score increased by 50% over same time last year.</p>
+          <p><h6>Boss</h6>That's good news, Carol! Great work, team!</p>
+          <p><h6>Janet from Sales</h6>Sounds like a celebration is in order.</p>
+        </div>
+      </div>
+      <div class="scrollspy" id="marker"></div>
+    </div>
+  </div>
+</div>
+</main>
+
+{{!-- MESSAGE INPUT SECTION --}}
+<footer class="page-footer blue">
+  <div class="row blue" id="chat">
+    <div class="container">
+      <div class="container">
+        <form col s12 id="messageForm">
+          <div class="row">
+            <div class="input-field col s11">
+              <input type="text" placeholder="Message" class="white grey-text text-darken-2 bubble" id="message">
+            </div>
+            <div class="col s1 center">
+              <a href="#marker"><i class="material-icons yellow blue-text small hoverable circle" id="sendMessage">arrow_upward</i></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
